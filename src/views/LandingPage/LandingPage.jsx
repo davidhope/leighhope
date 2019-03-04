@@ -18,10 +18,15 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.jsx";
-import TeamSection from "./Sections/TeamSection.jsx";
-import WorkSection from "./Sections/WorkSection.jsx";
-
+import AboutSection from "./Sections/AboutSection.jsx";
+//import ProductSection from "./Sections/ProductSection.jsx";
+//import TeamSection from "./Sections/TeamSection.jsx";
+//import WorkSection from "./Sections/WorkSection.jsx";
+/*
+<ProductSection />
+<TeamSection />
+<WorkSection />
+*/
 const dashboardRoutes = [];
 
 class LandingPage extends React.Component {
@@ -30,37 +35,26 @@ class LandingPage extends React.Component {
     return (
       <div>
         <Header
-          color="transparent"
+          color="primary"
           routes={dashboardRoutes}
           brand="Hope Mediation, LLC"
           rightLinks={<HeaderLinks />}
           fixed
-          changeColorOnScroll={{
-            height: 400,
-            color: "white"
-          }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+        <Parallax filter image={require("assets/img/0119_Logo_HopeMediation.png")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Hope Mediation, LLC</h1>
-                <h4>
-                  We provide effective solutions in difficult situations when help is needed.
-                </h4>
-                <h4>
-                  Our solutions find common ground, to expedite this difficult process, at a fraction of what it would otherwise cost in legal fees.
-                </h4>
+                <h1>Hope Mediation</h1>
+                <h4>Under Construction, Call 217-414-1503 for more information.</h4>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <ProductSection />
-            <TeamSection />
-            <WorkSection />
+            <AboutSection />
           </div>
         </div>
         <Footer />

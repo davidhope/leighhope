@@ -20,6 +20,8 @@ import headerLinksStyle from "assets/jss/material-kit-react/components/headerLin
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;
+  return '';
+  /*
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
@@ -47,12 +49,11 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react"
+          href="/"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          <CloudDownload className={classes.icons} /> Why Mediation?
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -108,6 +109,7 @@ function HeaderLinks({ ...props }) {
       </ListItem>
     </List>
   );
+  */
 }
 
 export default withStyles(headerLinksStyle)(HeaderLinks);

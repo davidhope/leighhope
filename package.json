@@ -55,6 +55,6 @@
     "build-package": "npm run build-package-css && babel src --out-dir dist",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ../leighhope.github.io/",
-    "deploy-package": "npm run clearoutputdir && npm run build-package && cp public/* ../leighhope.github.io/ && cp -r dist/* ../leighhope.github.io/"
+    "deploy-package": "cp build/* ../leighhope.github.io/"
   }
 }
