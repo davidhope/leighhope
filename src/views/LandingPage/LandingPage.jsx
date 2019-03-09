@@ -46,8 +46,12 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1>Hope Mediation</h1>
-                <h4>Under Construction, Call 217-414-1503 for more information.</h4>
+              <div className={classes.brand}>
+                  <h1 className={classes.title}>Hope Mediation</h1>
+                  <h3 className={classes.subtitle}>
+                    Under Construction, Call 217-414-1503 or <a mailto="hopemediationllc@gmail.com">email Leigh</a> for more information.
+                  </h3>
+              </div>
               </GridItem>
             </GridContainer>
           </div>
